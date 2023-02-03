@@ -1,7 +1,5 @@
 FROM debian:buster
 
-EXPOSE 9000
-
 RUN apt-get update  -y && \
 	apt-get upgrade -y && \
 	apt-get install -y php7.3 php-fpm php-mysqli mariadb-client wget
