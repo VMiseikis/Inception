@@ -11,8 +11,6 @@ services:
       - .env
     networks:
       - inception
-    ports:
-      - "3306:3306"
     restart: always
   
   wordpress:
@@ -25,8 +23,6 @@ services:
       - .env
     networks:
       - inception
-    ports:
-      - "9000:9000"
     depends_on:
       - mariadb
     restart: always
